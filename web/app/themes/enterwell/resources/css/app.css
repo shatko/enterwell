@@ -1,4 +1,8 @@
 @import "tailwindcss" theme(static);
 
+@import "./fonts.css";
+@import "./typography.css";
+@import "./theme.css";
+
 @source "../views/";
 @source "../../app/";

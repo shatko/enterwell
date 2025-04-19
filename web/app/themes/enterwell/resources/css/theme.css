@@ -1,0 +1,12 @@
+@theme {
+  /* Primary Brand Color */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #BABABA;
+  --color-secondary: #D9452D;
+
+  /* Typography */
+  --font-primary: 'Catamaran', sans-serif;
+  --font-secondary: 'Raleway', sans-serif;
+}
+
