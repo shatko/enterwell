@@ -1,9 +1,5 @@
 .form-container {
-  @apply flex justify-center mt-8;
-
   .form-wrapper {
-    @apply max-w-210 border border-solid border-white rounded-lg px-25 pt-10 pb-18 relative;
-  
     .wpcf7 {
       .wpcf7-form {
         @apply flex justify-center gap-4;
@@ -13,7 +9,7 @@
         }
 
         .enlist-form {
-          @apply flex gap-15;
+          @apply flex gap-7;
          
           .input-group {
             @apply relative;
@@ -60,6 +56,8 @@
         }
     
         .left-part {
+          @apply border-r border-solid border-white pr-7;
+
           .codedropz-upload-wrapper {
             .codedropz-upload-handler {
               .codedropz-upload-container {
@@ -80,6 +78,10 @@
           .wpcf7-submit {
             @apply w-full h-full px-16 py-2 cursor-pointer;
           }
+        }
+
+        .wpcf7-response-output {
+          @apply hidden
         }
       }
     }
