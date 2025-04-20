@@ -1,21 +1,70 @@
 .wpcf7 {
-  .enlist-form {
-    @apply flex gap-4;
-   
-    .input-group {
-      @apply relative;
-      
-      input {
-        @apply border border-solid border-secondary rounded-sm w-full transition-all duration-200;
-      }
+  .wpcf7-form {
+    @apply flex justify-center gap-4;
 
-      label {
-        @apply opacity-0 inline-block mb-1 transition-opacity duration-200;
-      }
+    .enlist-form {
+      @apply flex gap-15;
+     
+      .input-group {
+        @apply relative;
+ 
+        label {
+          @apply bg-background absolute z-10 left-3 -top-2 px-1.5 opacity-0 text-white font-secondary font-medium text-[10px] inline-block mb-1 transition-opacity duration-200;
+        }
 
-      &:focus-within label {
-        @apply opacity-100;
+        input {
+          @apply outline-none placeholder-primary font-secondary text-[15px] text-white opacity-100 font-medium py-3 px-4 border border-solid border-white/26 rounded-sm w-full transition-all duration-200;
+        }
+
+        .country-select {
+          .flag-dropdown {
+            .selected-flag {
+              @apply relative;
+
+              .arrow {
+                @apply left-85 w-4 h-2 border-none bg-no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg width='13' height='7' viewBox='0 0 13 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='icon-arrow-down' d='M12.8701 0.72159L12.2188 0.120314C12.1321 0.0400205 12.0321 0 11.9191 0C11.8063 0 11.7064 0.0400205 11.6196 0.120314L6.50007 4.84707L1.38072 0.120441C1.29389 0.0401468 1.19397 0.00012638 1.08109 0.00012638C0.968171 0.00012638 0.868251 0.0401468 0.781472 0.120441L0.130306 0.721758C0.0433441 0.801884 0 0.894141 0 0.998405C0 1.10258 0.043481 1.19484 0.130306 1.27497L6.20045 6.87977C6.28723 6.95994 6.38719 7 6.50007 7C6.61295 7 6.71273 6.95994 6.79946 6.87977L12.8701 1.27497C12.9569 1.1948 13 1.10254 13 0.998405C13 0.894141 12.9569 0.801884 12.8701 0.72159Z' fill='%23BABABA'/%3E%3C/svg%3E");
+              }
+            }  
+          }
+
+          .wpcf7-countrytext {
+            @apply pl-10
+          }
+        }
+
+        &:focus-within {
+          input {
+            @apply border-white;
+          } 
+
+          label {
+            @apply opacity-100;
+          }
+        }
+
+        &:not(:first-child) {
+          @apply mt-7;
+        }
       }
+    }
+
+    .left-part {
+      .codedropz-upload-wrapper {
+        .codedropz-upload-handler {
+          .codedropz-upload-container {
+            @apply h-145;
+
+            .codedropz-upload-inner {
+              @apply text-primary;
+            }
+          }
+        }
+      }
+    }
+
+    .wpcf7-submit {
+      @apply absolute;
     }
   }
 }
