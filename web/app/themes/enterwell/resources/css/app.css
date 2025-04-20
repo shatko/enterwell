@@ -4,5 +4,7 @@
 @import "./typography.css";
 @import "./theme.css";
 
+@import "./form/form.css";
+
 @source "../views/";
 @source "../../app/";

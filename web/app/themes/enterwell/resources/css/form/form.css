@@ -1,0 +1,21 @@
+.wpcf7 {
+  .enlist-form {
+    @apply flex gap-4;
+   
+    .input-group {
+      @apply relative;
+      
+      input {
+        @apply border border-solid border-secondary rounded-sm w-full transition-all duration-200;
+      }
+
+      label {
+        @apply opacity-0 inline-block mb-1 transition-opacity duration-200;
+      }
+
+      &:focus-within label {
+        @apply opacity-100;
+      }
+    }
+  }
+}
