@@ -38,6 +38,16 @@
                 @apply pl-10
               }
             }
+
+            .wpcf7-form-control-wrap {
+              .wpcf7-not-valid {
+                @apply border-secondary;
+              }
+
+              .wpcf7-not-valid-tip {
+                @apply text-secondary text-[10px] font-secondary;
+              }
+            }
     
             &:focus-within {
               input {
@@ -59,6 +69,8 @@
           @apply border-r border-solid border-white pr-7;
 
           .codedropz-upload-wrapper {
+            @apply max-w-72;
+
             .codedropz-upload-handler {
               .codedropz-upload-container {
                 @apply h-145;
@@ -81,7 +93,11 @@
         }
 
         .wpcf7-response-output {
-          @apply hidden
+          @apply hidden;
+        }
+
+        .dnd-upload-counter {
+          @apply hidden;
         }
       }
     }
