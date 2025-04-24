@@ -153,3 +153,17 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer',
     ] + $config);
 });
+
+
+add_action('admin_head', function () {
+    echo '<style>
+        
+        /* Post editor background */
+        .edit-post-visual-editor, 
+        .edit-post-text-editor, 
+        .block-editor-block-list__layout, 
+        .block-editor-writing-flow {
+            background-color: #181818;
+        }
+    </style>';
+});
